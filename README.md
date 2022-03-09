@@ -20,6 +20,7 @@ Per la gestione delle sessioni in PHP fornisce allo sviluppere la struttura dati
 <li>$_SESSION: array associativo che contiene i dati della sessione.</li>
 Funzioni più importanti:</br>
 <li>session_start(): Crea una sessione se non esiste oppure ne rimprende una valida in base all'ID di sessione fornito dal client.</li>
+<ul><li>Il nome del cookie è PHPSESSID</li></ul>
 <li>session_status(): Restituisce lo stato della sessione corrente.</li>
 <li>session_unset(): cancella tutte le variabli di sessione salvate.</li>
 <li>session_destroy(): distrugge tutti i dati associati alla sessione corrente, ma non cancella i valori associati alla sessionem ne il cookie di sessione. E' possibile utilizzare nuovamente i dati della sessione invocanto una session_start().</li>
