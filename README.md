@@ -23,7 +23,7 @@ Funzioni più importanti:</br>
 <ul><li>Il nome del cookie è PHPSESSID</li></ul>
 <li>session_status(): Restituisce lo stato della sessione corrente.</li>
 <li>session_unset(): cancella tutte le variabli di sessione salvate.</li>
-<li>session_destroy(): distrugge tutti i dati associati alla sessione corrente, ma non cancella i valori associati alla sessionem ne il cookie di sessione. E' possibile utilizzare nuovamente i dati della sessione invocanto una session_start().</li>
+<li>session_destroy(): distrugge tutti i dati associati alla sessione corrente, ma non il cookie di sessione. E' possibile utilizzare nuovamente i dati della sessione invocanto una session_start().</li>
 Esempio:</br>
 session_star();</br>
 $_SESSION["colore"] = "rosso";
