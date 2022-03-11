@@ -13,16 +13,16 @@ Generalmente le sessioni vengono utilizzati per memorizzare informazioni sull'at
 <h2>Funzionamento</h2>
 Tre fasi:</br>
 <li>Avvio o creazione. Quando si avvia una nuova sessione, oltre che salvare le informazioni il server invia il cookie di sessione al client.</li>
-<li>Utilizzo della sessione. Il sever chiede id di sessione al client (cookie di sessione) per recuperare le informazioni salvate nella sessione.</li>
+<li>Utilizzo della sessione. Il server chiede id di sessione al client (cookie di sessione) per recuperare le informazioni salvate nella sessione.</li>
 <li>Chiusura. E' possibile cancellare i dati di sessione sia su richiesta del client o dell'utente. E' sempre consigliato impostare la chiusura della sessione dopo un tempo prestabilito o alla chiusura del browser.</li>
 <h2>Sessioni in php</h2>
-Per la gestione delle sessioni in PHP fornisce allo sviluppere la struttura dati:
+Per la gestione delle sessioni, PHP fornisce allo sviluppatore la struttura dati:
 <li>$_SESSION: array associativo che contiene i dati della sessione.</li>
 Funzioni più importanti:</br>
-<li>session_start(): Crea una sessione se non esiste oppure ne rimprende una valida in base all'ID di sessione fornito dal client.<ul><li>Il nome del cookie è PHPSESSID</li></ul></li>
+<li>session_start(): Crea una sessione se non esiste oppure ne riprende una valida in base all'ID di sessione fornito dal client.<ul><li>Il nome del cookie è PHPSESSID</li></ul></li>
 <li>session_status(): Restituisce lo stato della sessione corrente.<ul><li>_DISABLED = 0</li><li>_NONE = 1</li><li>_ACTIVE = 2</li></ul></li>
-<li>session_unset(): cancella tutte le variabli di sessione salvate.</li>
-<li>session_destroy(): distrugge tutti i dati associati alla sessione corrente, ma non il cookie di sessione. E' possibile utilizzare nuovamente i dati della sessione invocanto una session_start().</li>
+<li>session_unset(): cancella tutte le variabili di sessione salvate.</li>
+<li>session_destroy(): distrugge tutti i dati associati alla sessione corrente, ma non il cookie di sessione. E' possibile utilizzare nuovamente i dati della sessione invocando una session_start().</li>
 Esempio:</br>
 session_star();</br>
 $_SESSION["colore"] = "rosso";
